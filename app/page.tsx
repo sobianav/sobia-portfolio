@@ -100,7 +100,7 @@ export default function Portfolio() {
             {/* Hero Text */}
             <div className="text-center lg:text-left">
               <h1 className="text-3xl lg:text-5xl font-bold leading-tight mb-6">
-                Computer Science Junior at Rutgers University
+                Computer Science Junior at Rutgerrrrrss University
               </h1>
               <p className="text-lg lg:text-xl text-green-200 leading-relaxed">
                 Passionate about technology, innovation, and making a positive impact through code.
