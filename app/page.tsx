@@ -45,17 +45,14 @@ export default function Portfolio() {
               Leadership
             </button>
             <button
-              onClick={() => document.getElementById("resources")?.scrollIntoView({ behavior: "smooth" })}
-              className="hover:text-green-300 transition-colors cursor-pointer"
-            >
-              Resources
-            </button>
-            <button
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
               className="hover:text-green-300 transition-colors cursor-pointer"
             >
               Contact
             </button>
+            <Link href="/blog" className="hover:text-green-300 transition-colors cursor-pointer">
+              Blog
+            </Link>
             <div className="flex items-center space-x-3">
               <Link href="mailto:sobianaveed05@gmail.com" className="hover:text-green-300 transition-colors">
                 <Mail className="w-5 h-5" />
@@ -318,50 +315,7 @@ sustainable supply chain practices and packaging methods.                   </p>
             </div>
           </section>
 
-          {/* Resources Section */}
-          <section id="resources" className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Resources</h2>
-              <p className="text-green-200 text-lg">Helpful tools and materials I recommend</p>
-            </div>
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="bg-green-800/60 border-green-600 text-white">
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <BookOpen className="w-5 h-5 mr-2" />
-                    Learning Resources
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-green-100">
-                    <li>• Introduction to Algorithms (CLRS)</li>
-                    <li>• Clean Code by Robert Martin</li>
-                    <li>• LeetCode for coding practice</li>
-                    <li>• MIT OpenCourseWare</li>
-                    <li>• FreeCodeCamp tutorials</li>
-                  </ul>
-                </CardContent>
-              </Card>
 
-              <Card className="bg-green-800/60 border-green-600 text-white">
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <Briefcase className="w-5 h-5 mr-2" />
-                    Tools & Technologies
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-green-100">
-                    <li>• Visual Studio Code</li>
-                    <li>• Git & GitHub</li>
-                    <li>• Docker for containerization</li>
-                    <li>• Postman for API testing</li>
-                    <li>• Figma for UI/UX design</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
 
           {/* Contact Section */}
           <section id="contact" className="mb-20">
@@ -464,19 +418,16 @@ sustainable supply chain practices and packaging methods.                   </p>
             Leadership
           </button>
           <button
-            onClick={() => document.getElementById("resources")?.scrollIntoView({ behavior: "smooth" })}
-            className="flex flex-col items-center text-xs"
-          >
-            <BookOpen className="w-5 h-5 mb-1" />
-            Resources
-          </button>
-          <button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             className="flex flex-col items-center text-xs"
           >
             <Phone className="w-5 h-5 mb-1" />
             Contact
           </button>
+          <Link href="/blog" className="flex flex-col items-center text-xs">
+            <User className="w-5 h-5 mb-1" />
+            Blog
+          </Link>
         </div>
       </div>
     </div>
